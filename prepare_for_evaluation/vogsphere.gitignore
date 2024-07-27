@@ -1,0 +1,16 @@
+# This .gitignore is to be used in every vogsphere repository.
+# 	It ignores everything except for the Makefile and any .c or .h files
+#	inside any directory.
+
+# Ignore everything
+*
+
+# Do not ignore the .gitignore file
+!.gitignore
+
+# Do not ignore the Makefile in the same directory as .gitignore
+!/Makefile
+
+# Do not ignore .c and .h files in any directory
+!**/*.c
+!**/*.h
