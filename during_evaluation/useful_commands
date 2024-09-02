@@ -1,0 +1,10 @@
+To check every function call from the compiled objects in obj/
+while filtering some names and listing them sorted and one time
+per function name:
+
+	nm obj/* | grep " U " | sort -u | grep ft_* -v | grep ph_* -v | awk '{print $2}'
+
+To copy & paste the subject allowed functions text, format it as
+a sorted list to ease checking against the former command output:
+
+	cat allowed_functions_bonus | tr -s , "\n" | tr -d " " | sort
